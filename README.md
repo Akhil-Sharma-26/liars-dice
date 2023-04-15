@@ -1,15 +1,23 @@
-# eframe template
+# FrontEnd Using Rust:
+The goal is for this to be the simplest way to get started writing a GUI app in Rust.
 
+You can compile your app natively or for the web, and share it using Github Pages.
+
+Just follow the Following steps to set up `[egui.rs](egui.rs)`
+
+
+## eframe template 
+
+--Already Done (This repo is already a template derived from the following links)--
 [![dependency status](https://deps.rs/repo/github/emilk/eframe_template/status.svg)](https://deps.rs/repo/github/emilk/eframe_template)
 [![Build Status](https://github.com/emilk/eframe_template/workflows/CI/badge.svg)](https://github.com/emilk/eframe_template/actions?workflow=CI)
 
 This is a template repo for [eframe](https://github.com/emilk/egui/tree/master/crates/eframe), a framework for writing apps using [egui](https://github.com/emilk/egui/).
 
-The goal is for this to be the simplest way to get started writing a GUI app in Rust.
-
-You can compile your app natively or for the web, and share it using Github Pages.
-
 ## Getting started
+
+Install Rust from [RUST](https://www.rust-lang.org/tools/install)
+and follow the steps given in the link to install rust according to your Operating system.
 
 Start by clicking "Use this template" at https://github.com/emilk/eframe_template/ or follow [these instructions](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 
@@ -50,8 +58,8 @@ On Fedora Rawhide you need to run:
 You can compile your app to [WASM](https://en.wikipedia.org/wiki/WebAssembly) and publish it as a web page.
 
 We use [Trunk](https://trunkrs.dev/) to build for web target.
-1. Install Trunk with `cargo install --locked trunk`.
-2. Run `trunk serve` to build and serve on `http://127.0.0.1:8080`. Trunk will rebuild automatically if you edit the project.
+1. Install Trunk with `cargo install --locked trunk`. 
+2. Run `trunk serve` to build (You can also run `cargo run` command to build the app) and serve on `http://127.0.0.1:8080`. Trunk will rebuild automatically if you edit the project. 
 3. Open `http://127.0.0.1:8080/index.html#dev` in a browser. See the warning below.
 
 > `assets/sw.js` script will try to cache our app, and loads the cached version when it cannot connect to server allowing your app to work offline (like PWA).
